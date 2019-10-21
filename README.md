@@ -1,23 +1,54 @@
-# vuepress-blog-default-theme
+# VuePress 部落格模版
 
-A boilerplate for create blog using vuepress.
+VuePress 模版，讓人快速上手，建置個人部落格。
 
-## Quick start
+## 立即啟用
 
-> VuePress requires Node.js >= 8
+> 使用 VuePress ，您需要 Node.js ，至少 8.0 以上之版本。
 
-Make sure you have node.js installed, then following commands.
+請先確認您的電腦已安裝符合上述需求之 Node.js 。待確認無誤後，請依下列提示輸入指令，即可在個人電腦端，啟用本模版所示範之部落格。
 
-```shell
-# install globally
-yarn global add vuepress # OR npm install -g vuepress
+1. 以 Global 方式安裝 VuePress 套件。
+    ```shell
+    npm install -g vuepress 
+    ```
 
-# clone
-git clone https://github.com/CheolHoJung/vuepress-blog-boilerplate.git
-cd vuepress-blog-boilerplate
+    【註】： yarn 使用者請改用以下指令：
 
-# build
-yarn install --save # OR npm install --save
-yarn dev # OR npm run dev
-```
+    ```shell script
+    yarn global add vuepress 
+    ```
 
+2. 自 GitHub 下載本模版相關檔案。
+    ```shell
+    git clone git@github.com:AlanJui/vuepress-blog.git
+    cd vuepress-blog
+    ```
+
+3. 安裝 Node.js 相關組件。
+    ```shell
+    npm install --save
+    ```
+    
+    【註】： yarn 使用者請改用以下指令：
+    
+    ```shell script
+    yarn install --save
+    ```
+
+4. 啟動 VuePress 編輯模式。
+    ```shell
+    npm run dev
+    ```
+    
+    【註】： yarn 使用者請改用以下指令：
+    
+    ```shell script
+    yarn dev 
+    ```
+
+5. 啟動 Web 瀏覽器，輸入下述網址後，觀看網頁內容。
+
+    ```shell script
+    http://localhost:8080/
+    ```
