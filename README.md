@@ -47,8 +47,10 @@
     yarn dev 
     ```
 
-5. 啟動 Web 瀏覽器，輸入下述網址後，觀看網頁內容。
+5. 啟動 Web 瀏覽器，輸入下述網址後，應可看到如下所示之網頁內容。
 
     ```shell script
     http://localhost:8080/
     ```
+
+![Home Page](./images/HomePage.png)
