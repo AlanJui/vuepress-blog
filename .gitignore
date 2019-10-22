@@ -64,3 +64,4 @@ typings/
 
 .idea/**
 docs/.vuepress/dist/**
+.git-repo.sh

@@ -34,27 +34,23 @@ sidebar: auto
 
 1. 自 GitHub 下載本部落格模版至個人端之電腦。
 
-    ```bash
-    git clone https://github.com/AlanJui/vuepress-blog.git
-    ```
-
+        git clone https://github.com/AlanJui/vuepress-blog.git
+ 
 2. 進入部落格模版所在目錄處。
 
-    ```bash
-    cd vuepress-blog
-    ```
+        cd vuepress-blog
 
 3. 安裝 Node.js 相關模組套件。
 
-    ```bash
-    npm install # or yarn
-    ```
+        npm install
+
+    > 【註】：指令可以 `yarn` 代。
 
 4. 啟動編輯操作模式。
 
-    ```bash
-    npm run dev # OR yarn dev
-    ```
+        npm run dev
+
+    > 【註】：指令可以 `yarn dev` 代。
 
 5. 打開 Web 瀏覽器，輸入「網址」： [http://localhost:8080](http://localhost:8080) ，若操作一切正常，將可看到如下所示之部落格「首頁」。
 
@@ -71,7 +67,7 @@ sidebar: auto
     ::: tip
     檔案建立，可透過終端機下指令完成：
     
-     `$ touch ./docs/posts/my-post.md`
+     `touch ./docs/posts/my-post.md`
     :::
     
     若是使用「檔案總管」瀏覽此工作目錄，各個「目錄」與「檔案」之結構關聯，將如下圖所示：
@@ -135,14 +131,14 @@ sidebar: auto
 參考 [GitHub Pages 指引](https://guides.github.com/features/pages/)，完成應有之設定，並取得 GitHub 網址（參考下述提示決定要用「個人專用型網址」，還是「專案專用型網址」）。
 
 ::: tip
-- 個人專用型網址： https://《UserName》.github.io/
+個人專用型網址： https://《UserName》.github.io/
 
-        【範例】： https://alanjui.github.io/
+>【範例】： https://alanjui.github.io/
 
 
-- 專案專用型網址： https://《UserName》.github.io/《Repo》/
+專案專用型網址： https://《UserName》.github.io/《Repo》/
 
-        【範例】： https://alanjui.github.io/vuepress-blog/
+>【範例】： https://alanjui.github.io/vuepress-blog/
 :::
 
 ![](../../images/GitPagesByProject.png)
@@ -153,7 +149,7 @@ sidebar: auto
     - 個人專用型網址：填入第 21 行
     - 專案專用型網址：填入第 25 行
     
-    ```shell script{21,25}
+    ```shell{21,25}
     #!/usr/bin/env sh
     
     # abort on errors
@@ -185,9 +181,7 @@ sidebar: auto
 
 2. 進入專案之「根目錄」，執行以下指令，要求 VuePress 將原屬 Markdown 檔案格式之文章，轉換成「網頁」專用之 HTML 檔案格式。轉換完成的輸出檔案，置放於： `docs/.vuepress/dist/` 目錄中。緊接著便立即執行「往 GitHub 佈署」作業，此時，將依 deploy.sh 中的「設定」，自位於 `docs/.vuepress/dist/` 目錄中的檔案，往 GitHub 傳送，完成部落格之佈署工作。
 
-    ```shell script
-	$ . deploy.sh
-    ```
+        . deploy.sh
 
     ::: tip
     在 deploy.sh 之前，需先輸入一個「英文句點」，再加一個「英文空白字元」。

@@ -68,7 +68,7 @@ masOS 作業系統的 Bash Shell ，其「預設設定檔」為： `~/.bash_prof
 
 所以，新增個 `~/.bashrc` 檔，使指令：`source ~/.bashrc` 的執行，如同直接執行：`source ~/.bash_profile`。
 
-```shell script{2:2}
+```shell{2:2}
 if [ -f ~/.bash_profile ]; then
     source ~/.bash_profile
 fi
@@ -96,7 +96,7 @@ fi
     
     加入下述內容：
 
-    ```shell script
+    ```shell
     if [ -f ~/.bash_profile ]; then
         source ~/.bash_profile
     fi

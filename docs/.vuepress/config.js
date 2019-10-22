@@ -13,5 +13,8 @@ module.exports = {
       '/guide/',
       '/posts/',
     ]
+  },
+  markdown: {
+    lineNumbers: true
   }
 }
