@@ -30,9 +30,7 @@ VM 之建置作業，採用 Vagrant Box 建置 VM 可降低不少時間。但 Va
 
 在 Mac 電腦，啟動 Web Browser 後，至 Vagrant 官網下載安裝檔案（.deb）。
 
-```
-https://www.vagrantup.com/downloads.html
-```
+> **https://www.vagrantup.com/downloads.html**
 
 
 ### （2）在 Server 端進行安裝
