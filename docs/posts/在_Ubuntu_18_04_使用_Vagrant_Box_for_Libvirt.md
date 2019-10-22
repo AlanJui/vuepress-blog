@@ -16,7 +16,7 @@ VM 之建置作業，採用 Vagrant Box 建置 VM 可降低不少時間。但 Va
 本文件用於指引：在 Ubuntu 18.04 作業系統，如何正確安裝 Vagrant Box for Libvirt ；及正常啟動 VM。
 
 
-# 安裝 Vagrant 軟體套件
+## 安裝 Vagrant 軟體套件
 
 以下為：Vagrant 2.2.6 安裝作業。
 
@@ -26,7 +26,7 @@ VM 之建置作業，採用 Vagrant Box 建置 VM 可降低不少時間。但 Va
 - 再於 Server 端電腦（作業系統：Ubuntu 18.04）進行 Vagrant 安裝。
 
 
-## （1）在 Client 端下載安裝檔案
+### （1）在 Client 端下載安裝檔案
 
 在 Mac 電腦，啟動 Web Browser 後，至 Vagrant 官網下載安裝檔案（.deb）。
 
@@ -35,7 +35,7 @@ https://www.vagrantup.com/downloads.html
 ```
 
 
-## （2）在 Server 端進行安裝
+### （2）在 Server 端進行安裝
 
 在 Client 端電腦啟動「終端機」，透過 ssh 登入伺服器。然後將先前已下載之 Vagrant 安裝檔案，複製到 Server 端的硬碟。 
 
@@ -45,7 +45,7 @@ https://www.vagrantup.com/downloads.html
     $ scp alanjui@192.168.66.100:~/Downloads/vagrant_2.2.6_x86_64.deb .
 
 
-## （3）透過 dpkg 安裝 Vagrant
+### （3）透過 dpkg 安裝 Vagrant
 
 使用 dpkg 執行檔案格式為 .deb 之安裝作業。
 
@@ -58,7 +58,7 @@ https://www.vagrantup.com/downloads.html
     設定 vagrant (1:2.2.6) ...
 
 
-## （4）驗證安裝結果
+### （4）驗證安裝結果
 
 執行以下指令，確認 Vagrant 已完成安裝，且可正常運作。
 
@@ -68,11 +68,11 @@ https://www.vagrantup.com/downloads.html
 
 
 
-# 安裝 Vagrant Box for Libvirt
+## 安裝 Vagrant Box for Libvirt
 
 以下安裝之 Vagrant Box for Libvirt 為 Ubuntu 18.04.3 Desktop 版本。
 
-
+```shell script
     $ vagrant box add peru/ubuntu-18.04-desktop-amd64 --provider=libvirt
     
     $ mkdir -p ~/workspace/vagrant-libvirt/ubuntu-1804 && cd $_
@@ -160,23 +160,16 @@ https://www.vagrantup.com/downloads.html
     
     0 packages can be updated.
     0 updates are security updates.
-    
+```
 
 
+## 參考文件
 
+- [**How to Install and Configure KVM on Ubuntu 18.04 LTS Server**](https://www.linuxtechi.com/install-configure-kvm-ubuntu-18-04-server/)
 
+- [**Vagrant and Libvirt with KVM or QEMU**](https://docs.cumulusnetworks.com/cumulus-vx/Development-Environments/Vagrant-and-Libvirt-with-KVM-or-QEMU/)
 
-# 參考文件
-
-**How to Install and Configure KVM on Ubuntu 18.04 LTS Server**
-https://www.linuxtechi.com/install-configure-kvm-ubuntu-18-04-server/
-
-**Vagrant and Libvirt with KVM or QEMU**
-https://docs.cumulusnetworks.com/cumulus-vx/Development-Environments/Vagrant-and-Libvirt-with-KVM-or-QEMU/
-
-**How to Use Vagrant with Libvirt on Linux**
-
-https://computingforgeeks.com/using-vagrant-with-libvirt-on-linux/
+- [**How to Use Vagrant with Libvirt on Linux**](https://computingforgeeks.com/using-vagrant-with-libvirt-on-linux/)
 
 
 
